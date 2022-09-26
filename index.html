@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
+    <title>Picture in picture</title>
+  </head>
+  <body>
+    <header class="navigation">
+      <h1 class="headline">Picture in picture</h1>
+      <a href="https://www.linkedin.com/in/jithin-p-8396501b7/">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-linkedin"
+        >
+          <path
+            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+          ></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+      </a>
+    </header>
+    <p class="description">
+      The Picture-in-Picture API allow websites to create a floating video
+      window always on top of other windows so that users may continue consuming
+      media while they interact with other content sites, or applications on
+      their device. Here an asynchronous function will call the navigator web
+      API and request a screen
+      <mark>(await navigator.mediaDevices.getDisplayMedia())</mark><br />
+      Then this media will be assigned to the video element in the html
+    </p>
+    <main class="main-container">
+      <video id="video" controls hidden class="videoEl"></video>
+      <div class="container">
+        <button class="button" id="buttonSelectScreen">SELECT SCREEN</button>
+        <button class="button" id="buttonStart">START</button>
+      </div>
+    </main>
+  </body>
+</html>
